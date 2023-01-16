@@ -1,0 +1,107 @@
+/* cs font import link */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,500;1,400&family=Poppins:wght@400;500;600;700&family=Varela&family=Work+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* color variable */
+:root {
+  --gray: #3a3a3a;
+  --black: #18191f;
+  --pink: #e02c6d;
+  --orange: #fb8200;
+  --blue-gray: #787885;
+  --navi: #0a0826;
+}
+/* common css */
+.container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 60px 25px;
+}
+
+/* header section */
+.nv_bar {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--gray);
+}
+.nav-item > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 35px;
+}
+
+/* header content */
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+.text-side {
+  width: 600px;
+  margin-top: 145px;
+}
+.text-side > h1 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 70px;
+  color: var(--gray);
+}
+
+.text-side > p {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 20px 0;
+  color: var(--gray);
+}
+.text-side > button {
+  background-color: var(--pink);
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+}
+.image-side {
+  width: 50%;
+  position: relative;
+  left: 100px;
+}
+
+.image-side > .circle-img,
+.main-camera {
+  position: absolute;
+}
+img.main-camera {
+  margin-top: 30px;
+}
+
+/* company list */
+
+.company_list {
+  padding: 35px 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+hr {
+  height: 1px;
+  background: linear-gradient(
+    rgba(192, 204, 218, 0.021) 10%,
+    rgba(192, 204, 218, 0.6) 50%,
+    rgba(181, 181, 181, 0.004) 10%
+  );
+}
